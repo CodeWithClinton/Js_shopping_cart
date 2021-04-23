@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+    <script src="https://kit.fontawesome.com/33e495fb35.js" crossorigin="anonymous"></script>
+    <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark" style = 'height: 100px'>
+        <div class="container-fluid">
+          <h2  style = 'color: white'>Shoprite Store</h2>
+          <i class="fas fa-cart-arrow-down"></i>
+        </div>
+      </nav>
+      
+      <div class = 'container'>
+          <div class = 'row'>
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/choccolate_cake.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Choccolate Cake</h3>
+                      <h4 class="card-text">$100</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/green_shoe.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Green Shoe</h3>
+                      <h4 class="card-text">$80</h4>
+                      <a  class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/hamburger.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Hamburger</h3>
+                      <h4 class="card-text">$50</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+            
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/pink_shoe.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Pink Shoe</h3>
+                      <h4 class="card-text">$100</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/shirt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">T Shirt</h3>
+                      <h4 class="card-text">$30</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/strawberry_cake.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Strawberry Cake</h3>
+                      <h4 class="card-text">$100</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+      <div class="uk-overflow-auto container" style = 'width: 70%'>
+        <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+            <thead>
+                <tr>
+                    <th class="uk-table-shrink"></th>
+                    <th class="uk-table-small sty"><h3>ITEM</h3></th>
+                    <th class="uk-table-small"></th>
+                    <th class="uk-width-small sty"><h3>PRICE</h3></th>
+                    <th class="uk-table-shrink uk-text-small sty"><h3>QUANTITY</h3></th>
+                    <th class="uk-table-shrink uk-text-small sty"><h3>TOTAL</h3></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="uk-checkbox" type="checkbox"></td>
+                    <td><img class="uk-preserve-width uk-border-circle" src="img/strawberry_cake.jpg" width="40" alt=""></td>
+                    <td class="uk-table-link">
+                        <h3 class = "item-name">Strawberry Cake</h3>
+                    </td>
+                    <td class="uk-text-truncate item-price"><h3>$100</h3></td>
+                    <td><input type = 'number' class = 'num' value = '1'></td>
+                    <td class="uk-text-truncate total-price"><h3>$100</h3></td>
+                    <td><button class="uk-button uk-button-danger" type="button">Remove</button></td>
+                </tr>
+          
+
+            </tbody>
+            <tr>
+              <td><input class="uk-checkbox" type="checkbox"></td>
+              <td><img class="uk-preserve-width uk-border-circle"  width="40" alt=""></td>
+              <td class="uk-table-link">
+                  <h3 class = "item-name"><strong>Grand-Total</strong></h3>
+              </td>
+              <td class="uk-text-truncate"><h3></h3></td>
+              <td class="uk-text-truncate"><h3></h3></td>
+              <td class="uk-text-truncate grand-total"><h3><strong>$0</strong></h3></td>
+              
+          </tr>
+        </table>
+    </div>
+
+      <script src = 'script.js'></script>
+</body>
+</html>
+
